@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package hero;
+
+service HeroService {
+    rpc GetHero (hero.GetHeroRequest) returns (hero.Hero);
+}
+
+message GetHeroRequest {
+    int32 id = 1;
+}
+
+message Hero {
+    int32 id = 1;
+    string name = 2;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package greet;
+
+import "google/protobuf/empty.proto";
+
+service GreetService {
+    rpc SayHello (google.protobuf.Empty) returns (greet.Greeting) {};
+    rpc GetGreeting (greet.GetGreetingRequest) returns (greet.Greeting) {};
+}
+
+message Greeting {
+    int32 id = 1;
+    string message = 2;
+}
+
+message GetGreetingRequest {
+    int32 id = 1;
+}
+

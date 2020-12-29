@@ -1,0 +1,11 @@
+{
+  "collection": "@nestjs/schematics",
+  "compilerOptions": {
+    "assets": [
+      "**/*.proto",
+      "generated/*"
+    ],
+    "webpack": true
+  },
+  "sourceRoot": "src"
+}

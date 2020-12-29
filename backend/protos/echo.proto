@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package echo;
+
+import "api.proto";
+
+service EchoService {
+    rpc Health(api.Empty) returns (EchoResponse) {};
+    rpc GetEcho(EchoRequest) returns (EchoResponse) {};
+    rpc GetEchoStream(stream EchoRequest) returns (stream EchoResponse) {};
+}
+
+message EchoRequest {
+    int32 id = 1;
+    string message = 2;
+}
+
+message EchoResponse {
+    int32 id = 1;
+    string message = 2;
+}

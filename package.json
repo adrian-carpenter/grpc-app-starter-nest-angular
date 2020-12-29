@@ -1,0 +1,23 @@
+{
+  "name": "grpc-app-starter-nest-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "bash ./proto_compile.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/faker": "^5.1.4",
+    "protoc-gen-grpc": "^1.4.2",
+    "protoc-gen-grpc-web": "^1.2.0",
+    "protoc-gen-ts": "^0.3.4",
+    "ts-protoc-gen": "^0.13.0"
+  },
+  "dependencies": {
+    "faker": "^5.1.0"
+  }
+}
